@@ -38,8 +38,8 @@ let score = 0;
 let time = 10;
 
 function getRandomWord() {
-    return words[Math.floor(Math.random()*words.length)];
-}  
+    return words[Math.floor(Math.random() * words.length)];
+}
 
 function addWordToDOM() {
     randomWord = getRandomWord();
@@ -48,6 +48,11 @@ function addWordToDOM() {
 addWordToDOM()
 
 // Event
-text.addEventListener('input', e =>{
+text.addEventListener('input', e => {
     const insertedText = e.target.value;
+
+    if (insertedText === randomWord) {
+        addWordToDOM();
+        e.target.value = '';
+    }
 })
