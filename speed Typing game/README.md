@@ -46,6 +46,16 @@ function updateScore() {
   scoreEl.innerHTML = score;
 }
 ```
+Start counting don + updateTime El
+```javascript
+const timeInterval = setInterval(updateTime, 1000);
+
+function updateTime() {
+    time--;
+    timeEl.innerHTML = time + 's';
+}
+```
+
 
 Event listeners
 ```javascript
