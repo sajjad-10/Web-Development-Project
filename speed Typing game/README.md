@@ -46,13 +46,17 @@ function updateScore() {
   scoreEl.innerHTML = score;
 }
 ```
-Start counting don + updateTime El
+Start counting don + updateTime El + game Over
 ```javascript
 const timeInterval = setInterval(updateTime, 1000);
 
 function updateTime() {
     time--;
     timeEl.innerHTML = time + 's';
+    if (time === 0) {
+        clearInterval(timeInterval);
+        gameOver();
+    }
 }
 ```
 
