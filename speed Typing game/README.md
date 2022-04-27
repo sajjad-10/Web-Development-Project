@@ -59,7 +59,16 @@ function updateTime() {
     }
 }
 ```
-
+game Over UI
+```javascript
+function gameOver(params) {
+    endgameEl.innerHTML = `
+    <h1>Time ran out</h1>
+    <p>Your final score os ${score}</p>
+    <button onclick="window.location.reload()">Reload</button`;
+    endgameEl.style.display = 'flex';
+}
+```
 
 Event listeners
 ```javascript
