@@ -45,3 +45,4 @@ function addWordToDOM() {
     randomWord = getRandomWord();
     word.innerHTML = randomWord;
 }
+addWordToDOM()
