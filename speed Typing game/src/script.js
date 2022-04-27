@@ -46,3 +46,8 @@ function addWordToDOM() {
     word.innerHTML = randomWord;
 }
 addWordToDOM()
+
+// Event
+text.addEventListener('input', e =>{
+    const insertedText = e.target.value;
+})
