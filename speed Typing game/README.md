@@ -12,6 +12,7 @@ A Pen created on CodePen.io [Live-Demo](https://codepen.io/sajjad-10/pen/OJzYmdV
 -  DOM, Time & setTimeout & setInterval
 
 ## Usage/javascript
+
 Init
 ```javascript
 const words = [];   // list of words 
@@ -19,6 +20,12 @@ let randomWord;     // Init word
 let score = 0;      // Init scores
 let time = 10;      // Init time
 ```
+
+Focuses on text on start
+```javascript
+text.focus();
+```
+
 Generate random word from array + add to DOM
 ```javascript
 function getRandomWord() {
@@ -31,6 +38,7 @@ function addWordToDOM() {
 }
 addWordToDOM();
 ```
+
 Update score
 ```javascript
 function updateScore() {
@@ -38,6 +46,7 @@ function updateScore() {
   scoreEl.innerHTML = score;
 }
 ```
+
 Event listeners
 ```javascript
 text.addEventListener('input', e => {
