@@ -37,6 +37,8 @@ let score = 0;
 
 let time = 10;
 
+let difficulty = 'medium';
+
 text.focus();
 
 const timeInterval = setInterval(updateTime, 1000);
@@ -63,8 +65,8 @@ function updateTime() {
     }
 }
 function gameOver(params) {
-    endgameEl.innerHTML = 
-    `
+    endgameEl.innerHTML =
+        `
     <h1>Time ran out</h1>
     <p>Your final score os ${score}</p>
     <button onclick="window.location.reload()">Reload</button
@@ -84,4 +86,9 @@ text.addEventListener('input', e => {
     }
 })
 
-settingsBtn.addEventListener('click', ()=>settings.classList.toggle('hide')); 
+settingsBtn.addEventListener('click', () => settings.classList.toggle('hide'));
+
+settingsForm.addEventListener('change', (e) => {
+    difficulty = e.target.value;
+    localStorage.setItem('difficulty', difficulty);
+})
