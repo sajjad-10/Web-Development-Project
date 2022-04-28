@@ -97,7 +97,7 @@ function gameOver(params) {
 }
 ```
 
-Event input
+Event input + add difficulty timing
 
 ```javascript
 text.addEventListener("input", (e) => {

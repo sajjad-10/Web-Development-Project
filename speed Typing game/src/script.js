@@ -39,7 +39,7 @@ let time = 10;
 
 let difficulty = localStorage.getItem('difficulty') !== null ? localStorage.getItem('difficulty') : 'medium';
 
-difficultySelect.value =  localStorage.getItem('difficulty') !== null ? localStorage.getItem('difficulty') : 'medium';
+difficultySelect.value = localStorage.getItem('difficulty') !== null ? localStorage.getItem('difficulty') : 'medium';
 
 text.focus();
 
@@ -85,6 +85,14 @@ text.addEventListener('input', e => {
         addWordToDOM();
         updateScore();
         e.target.value = '';
+
+        if (difficulty === 'hard') {
+            time += 2;
+        } else if (difficulty === 'medium') {
+            time += 3;
+        } else {
+            time += 5
+        }
     }
 })
 
