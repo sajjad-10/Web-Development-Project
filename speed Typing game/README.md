@@ -32,6 +32,15 @@ let difficulty =
         : "medium";
 ```
 
+Set difficulty select value
+
+```javascript
+difficultySelect.value =
+    localStorage.getItem("difficulty") !== null
+        ? localStorage.getItem("difficulty")
+        : "medium";
+```
+
 Focuses on text on start
 
 ```javascript
