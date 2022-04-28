@@ -83,3 +83,5 @@ text.addEventListener('input', e => {
         e.target.value = '';
     }
 })
+
+settingsBtn.addEventListener('click', ()=>settings.classList.toggle('hide')); 

@@ -70,7 +70,7 @@ function gameOver(params) {
 }
 ```
 
-Event listeners
+Event input
 ```javascript
 text.addEventListener('input', e => {
   const insertedText = e.target.value;
@@ -91,4 +91,8 @@ text.addEventListener('input', e => {
     updateTime();
   }
 });
+```
+Event setting Btn
+```javascript
+settingsBtn.addEventListener('click', ()=>settings.classList.toggle('hide')); 
 ```
