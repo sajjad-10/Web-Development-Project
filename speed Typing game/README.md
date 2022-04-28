@@ -4,13 +4,11 @@
 
 A Pen created on CodePen.io [Live-Demo](https://codepen.io/sajjad-10/pen/OJzYmdV?editors=1010).
 
-## Roadmap
-
--   Create with HTML & CSS & SASS Animation
+## Roadmap (what we use)
 
 -   JavaScript:
 
--   DOM, Time & setTimeout & setInterval
+-   DOM, localStorage & getItem , focus, setInterval, clearInterval, target, value,
 
 ## Usage/javascript
 
