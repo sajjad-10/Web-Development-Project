@@ -23,6 +23,15 @@ let score = 0; // Init scores
 let time = 10; // Init time
 ```
 
+Set difficulty to value localeStorage or set Default
+
+```javascript
+let difficulty =
+    localStorage.getItem("difficulty") !== null
+        ? localStorage.getItem("difficulty")
+        : "medium";
+```
+
 Focuses on text on start
 
 ```javascript
@@ -109,11 +118,11 @@ Event setting Btn
 settingsBtn.addEventListener("click", () => settings.classList.toggle("hide"));
 ```
 
-Event setting Btn
+Event select
 
-````javascript
-settingsForm.addEventListener('change', (e) => {
+```javascript
+settingsForm.addEventListener("change", (e) => {
     difficulty = e.target.value;
-    localStorage.setItem('difficulty', difficulty);
-})```
-````
+    localStorage.setItem("difficulty", difficulty);
+});
+```
